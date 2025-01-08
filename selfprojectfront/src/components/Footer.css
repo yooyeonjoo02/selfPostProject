@@ -1,0 +1,95 @@
+/* 기본 푸터 스타일 */
+.footer {
+    background-color: #333; /* 다크한 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-title {
+    font-size: 24px;
+    color: #f79c89; /* 포인트 컬러 */
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-center h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-map img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-right {
+    flex: 1;
+}
+
+.footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f79c89;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-button {
+    background-color: #f79c89;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+    background-color: #d97567;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.heart {
+    color: red;
+}

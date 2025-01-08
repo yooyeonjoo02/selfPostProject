@@ -1,0 +1,16 @@
+.photo-section {
+    padding: 50px 20px;
+}
+
+.photo-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}

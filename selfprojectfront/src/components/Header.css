@@ -1,0 +1,108 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/*.header {*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 20px 20px; !* 세로 패딩을 늘려 헤더 높이를 증가 *!*/
+/*    background-color: #fff;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*    height: 80px; !* 원하는 높이를 명시적으로 설정 *!*/
+/*}*/
+
+.header {
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 헤더가 화면 전체 너비를 차지 */
+    z-index: 1000; /* 배너보다 위에 표시되도록 z-index 설정 */
+    background-color: white; /* 배경색을 설정하여 배너와 겹치지 않도록 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-button img,
+.search-button img,
+.mail-button img {
+    width: 28px; /* 아이콘 크기를 조금 더 키워 비율 조정 */
+    height: 28px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #333;
+}
+
+.logo-subtitle {
+    font-size: 12px;
+    color: #c7a17a;
+    text-transform: uppercase;
+}
+
+.header-middle {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c7a17a;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-links li:hover {
+    color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-button img,
+.mail-button img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-button img:hover,
+.mail-button img:hover {
+    filter: brightness(0.7);
+}

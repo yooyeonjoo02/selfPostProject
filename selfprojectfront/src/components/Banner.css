@@ -1,0 +1,45 @@
+/* 배너 스타일 */
+.banner {
+    margin-top: 70px; /* 헤더 높이 */
+    width: 100%; /* 배너 너비 */
+    height: 500px; /* 배너 높이 */
+    overflow: hidden; /* 스크롤 제거 */
+    position: relative;
+}
+
+/* 슬라이드 전체를 감싸는 컨테이너 */
+.banner-slides {
+    display: flex;
+    transition: transform 1s ease-in-out; /* 부드러운 슬라이드 이동 애니메이션 */
+    height: 100%;
+}
+
+/* 각 슬라이드 스타일 */
+.banner-slide {
+    flex: 0 0 100%; /* 슬라이드가 배너 너비만큼만 표시되도록 설정 */
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    background-position: center; /* 배경 이미지 가운데 정렬 */
+    position: relative;
+    height: 100%;
+}
+
+/* 배너 텍스트 컨텐츠 */
+.banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.banner-content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
